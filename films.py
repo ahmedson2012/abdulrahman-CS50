@@ -1,6 +1,5 @@
 import csv
 
-
 class film:
     def __init__(self, name, kind, author, length):
         self.name = name
@@ -8,9 +7,8 @@ class film:
         self.author = author
         self.length = length
 
-    def writefilm(self):
-        print(f"Kind: {kind}\nAuthor: {author}\nLength: {length}")
 films = []
+
 def makefilm(name, kind, author, length):
     films.append(film(name, kind, author, length))
 
