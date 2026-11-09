@@ -22,7 +22,7 @@ for i in range(10):
     length = input(f"Enter the time of the film number(in minutes) {i + 1}: ")
     makefilm(name, kind, author, length)
 
-with open("films.csv", "r") as csvfilms:
+with open("films.csv", "w") as csvfilms:
     writer = csv.writer(csvfilms)
     writer.writerow(["name", "kind", "author", "length in minutes"])
     for i in range(10):
